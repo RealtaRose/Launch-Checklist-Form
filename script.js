@@ -41,6 +41,9 @@ window.addEventListener('load', function() {
     document.getElementById("copilotStatus").innerHTML = `Copilot ${copilotNameInput.value} Ready`;
 
     let test = true;
+    document.getElementById("fuelStatus").innerHTML = "Fuel level high enough for launch";
+    document.getElementById("cargoStatus").innerHTML = "Cargo mass low enough for launch";
+
 
     if (fuelLevelInput.value < 10000) {
       document.getElementById("faultyItems").style.visibility = "visible";
